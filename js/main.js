@@ -85,5 +85,4 @@ $(document).ready(function(){
     $(".nav-tabs .nav-link").click(function(){
         $(this).tab('show');
     });
-  
   });
