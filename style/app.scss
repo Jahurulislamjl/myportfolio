@@ -46,7 +46,7 @@ html{
     @media (max-width: 768px){
       background: $primaryColor !important;
       //border-bottom: 5px solid $primaryColor;
-      background: $primary;
+      background: $primaryColor;
       opacity: .8;
       box-shadow: -1px 0px 9px 2px #444444a1;
     }
@@ -89,7 +89,7 @@ html{
         }
         @media(max-width: 768px) {
           &:focus {
-            background: $primary;
+            background: $primaryColor;
 
           }
         }
@@ -97,23 +97,22 @@ html{
     }
   }
 }
-.navbar-toggler {
-  .user-defined {
-    color: $white;
-    //outline: 0;
+.navbar-toggler{
+  background-color: $white !important;
+  outline: 0;
+  .navbar-toggler-icon{
+    color: white !important;
   }
 }
-
 //======About Section==========
-
 .home-inner{
   position: relative;
   height: 500px;
-  background: url("/image/popcorn.jpg") no-repeat center;
+  background-image: url("/image/cycle.jpg");
   background-size: cover;
 
   .dark-overlay{
-    position: relative;
+    position: absolute;
     background: $black;
     opacity: 0.6;
     height: 100%;
@@ -149,7 +148,7 @@ html{
       }
       .intro{
         .hello{
-          background: $primary;
+          background: $primaryColor;
           color: $white;
           font-weight: 500;
           font-size: 18px;
@@ -203,7 +202,7 @@ html{
       }
     }
     .social-media{
-      background: $primary;
+      background: $primaryColor;
       display: flex;
       justify-content: center;
       .icon-link{
@@ -221,7 +220,7 @@ html{
         }
         &:hover{
           color: $black;
-          background: lighten($primary, 5%);
+          background: lighten($primaryColor, 5%);
           border-radius: 100%;
         }
         .mdi{
@@ -246,13 +245,13 @@ html{
 }
 #testimonial{
   .slick-prev::before, .slick-next::before{
-    color: $primary;
+    color: $primaryColor;
   }
 }
 //=======Skills==============
 .skills{
   .accordion{
-    box-shadow: 0 2px 20px -8px  $primary;
+    box-shadow: 0 2px 20px -8px  $primaryColor;
     width: 100%;
     transition: all 0.1ms !important;
     .card{
@@ -267,9 +266,9 @@ html{
           border: none;
         }
         .card-body{
-          border-right: 2px solid $primary;
-          border-left: 2px solid $primary;
-          border-top: 1px solid lighten($primary, 20%);
+          border-right: 2px solid $primaryColor;
+          border-left: 2px solid $primaryColor;
+          border-top: 1px solid lighten($primaryColor, 20%);
         }
       }
     }
@@ -285,10 +284,7 @@ html{
             .progress{
               margin-bottom: 30px;
               height: 6px;
-              background: $primary;
-              .progress-bar{
-
-              }
+              background: $primaryColor;
             }
           }
         }
@@ -301,7 +297,7 @@ html{
             .progress{
               margin-bottom: 30px;
               height: 6px;
-              background: $primary;
+              background: $primaryColor;
             }
           }
         }
@@ -355,7 +351,7 @@ html{
         padding-bottom: 0;
         .service-icon{
           font-size: 52px;
-          color: $primary;
+          color: $primaryColor;
         }
         .card-title{
           .title{
@@ -365,7 +361,7 @@ html{
           }
           .sub-title{
             font-size: 20px;
-            color: $primary;
+            color: $primaryColor;
           }
         }
         hr{
@@ -386,20 +382,20 @@ html{
   .card{
     border: none;
     border-radius: 0;
-    border-right: 5px solid $primary;
-    border-left: 5px solid $primary;
+    border-right: 5px solid $primaryColor;
+    border-left: 5px solid $primaryColor;
     box-shadow: 0px 2px 20px -7px lighten($black, 50%);
     position: relative;
     margin-bottom: 30px;
     @media (max-width: 425px){
       border-right: none;
       border-left: none;
-      border-top: 5px solid $primary;
+      border-top: 5px solid $primaryColor;
     }
     .year{
       text-align: center;
       font-weight: bold;
-      color: $primary;
+      color: $primaryColor;
       font-size: 20px;
       P{
         margin-bottom: 0;
@@ -425,7 +421,7 @@ html{
     .arrow-box {
       height: 30px;
       width: 30px;
-      background: $primary;
+      background: $primaryColor;
       transform: rotate(45deg);
       position: absolute;
       display: block;
@@ -436,7 +432,7 @@ html{
     .line-dot{
       height: 10px;
       width: 10px;
-      background: $primary;
+      background: $primaryColor;
       position: absolute;
       display: block;
       box-shadow: 0 2px 20px -7px lighten($black, 50%);
@@ -450,7 +446,7 @@ html{
     &:hover{
       .arrow-box{
         z-index: 1;
-        border: 3px solid $primary;
+        border: 3px solid $primaryColor;
         animation: boxmove 1s infinite;
       }
       @keyframes boxmove{
@@ -458,16 +454,16 @@ html{
           background: $white;
         }
         25%{
-          background: lighten($primary, 30%);
+          background: lighten($primaryColor, 30%);
         }
         50%{
-          background: lighten($primary, 20%);
+          background: lighten($primaryColor, 20%);
         }
         75%{
-          background: lighten($primary, 10%);
+          background: lighten($primaryColor, 10%);
         }
         100%{
-          background: $primary;
+          background: $primaryColor;
         }
       }
       .line-dot{
@@ -478,7 +474,7 @@ html{
           background: $white;
         }
         100%{
-          background: $primary;
+          background: $primaryColor;
         }
       }
     }
@@ -486,7 +482,7 @@ html{
   }
   .experience-left{
     padding-right: 50px;
-    border-right: 3px solid lighten($primary, 20%);
+    border-right: 3px solid lighten($primaryColor, 20%);
     @media (max-width: 425px){
       padding-right: 0!important;
       border-right: none;
@@ -571,20 +567,20 @@ html{
   .card{
     border: none;
     border-radius: 0;
-    border-right: 5px solid $primary;
-    border-left: 5px solid $primary;
+    border-right: 5px solid $primaryColor;
+    border-left: 5px solid $primaryColor;
     box-shadow: 0px 2px 20px -7px lighten($black, 50%);
     position: relative;
     margin-bottom: 30px;
     @media (max-width: 425px){
       border-right: none;
       border-left: none;
-      border-top: 5px solid $primary;
+      border-top: 5px solid $primaryColor;
     }
     .year{
       text-align: center;
       font-weight: bold;
-      color: $primary;
+      color: $primaryColor;
       font-size: 20px;
       P{
         margin-bottom: 0;
@@ -610,7 +606,7 @@ html{
     .arrow-box {
       height: 30px;
       width: 30px;
-      background: darken($primary, 5%);
+      background: darken($primaryColor, 5%);
       transform: rotate(45deg);
       position: absolute;
       display: block;
@@ -621,7 +617,7 @@ html{
     .line-dot{
       height: 10px;
       width: 10px;
-      background: $primary;
+      background: $primaryColor;
       position: absolute;
       display: block;
       box-shadow: 0px 2px 20px -7px lighten($black, 50%);
@@ -635,7 +631,7 @@ html{
     &:hover{
       .arrow-box{
         z-index: 1;
-        border: 3px solid $primary;
+        border: 3px solid $primaryColor;
         animation: boxmove 1s infinite;
       }
       @keyframes boxmove{
@@ -643,16 +639,16 @@ html{
           background: $white;
         }
         25%{
-          background: lighten($primary, 30%);
+          background: lighten($primaryColor, 30%);
         }
         50%{
-          background: lighten($primary, 20%);
+          background: lighten($primaryColor, 20%);
         }
         75%{
-          background: lighten($primary, 10%);
+          background: lighten($primaryColor, 10%);
         }
         100%{
-          background: $primary;
+          background: $primaryColor;
         }
       }
       .line-dot{
@@ -663,14 +659,14 @@ html{
           background: $white;
         }
         100%{
-          background: $primary;
+          background: $primaryColor;
         }
       }
     }
   }
   .training-left{
     padding-right: 50px;
-    border-right: 3px solid lighten($primary, 20%);
+    border-right: 3px solid lighten($primaryColor, 20%);
     @media (max-width: 425px){
       padding-right: 0!important;
       border-right: none;
@@ -769,7 +765,7 @@ html{
     .year{
       font-size: 20px;
       font-weight: bold;
-      color: $primary;
+      color: $primaryColor;
     }
     .course{
       font-size: 26px;
@@ -794,8 +790,8 @@ html{
     justify-content: left;
     .university{
       padding-left: 40px;
-      border-left: 10px solid $primary;
-      border-bottom: 10px solid $primary;
+      border-left: 10px solid $primaryColor;
+      border-bottom: 10px solid $primaryColor;
       @media (max-width: 425px){
         padding-left: 0;
         border-left: none;
@@ -812,8 +808,8 @@ html{
     .college{
       padding-left: 40px;
       padding-top: 20px;
-      border-left: 10px solid $primary;
-      border-bottom: 10px solid $primary;
+      border-left: 10px solid $primaryColor;
+      border-bottom: 10px solid $primaryColor;
       @media (max-width: 425px){
         padding-left: 0;
         border-left: none;
@@ -830,8 +826,8 @@ html{
     .school{
       padding-left: 40px;
       padding-top: 20px;
-      border-left: 10px solid $primary;
-      border-bottom: 10px solid $primary;
+      border-left: 10px solid $primaryColor;
+      border-bottom: 10px solid $primaryColor;
       @media (max-width: 425px){
         padding-left: 0;
         border-left: none;
@@ -849,7 +845,7 @@ html{
         box-shadow: 0px 2px 20px -7px lighten($black, 50%);
         &:hover{
           .btn{
-            background: lighten($primary, 5%) !important;
+            background: lighten($primaryColor, 5%) !important;
             color: $white !important;
           }
         }
@@ -897,10 +893,10 @@ html{
     .price-item-mid{
       .card{
         .card-header{
-          background: $primary!important;
+          background: $primaryColor!important;
         }
         .btn{
-          background: $primary !important;
+          background: $primaryColor !important;
           color: $white !important;
           border: none !important;
         }
@@ -946,10 +942,10 @@ html{
     background: $background-color;
   }
   .slick-prev::before{
-    color: $primary;
+    color: $primaryColor;
   }
   .slick-next::before{
-    color: $primary;
+    color: $primaryColor;
   }
   .reference-person{
     display: flex;
@@ -1001,7 +997,7 @@ html{
       p{
         font-size: 48px;
         font-weight: 400;
-        color: $primary;
+        color: $primaryColor;
         margin-bottom: 2px;
       }
 
@@ -1115,11 +1111,11 @@ html{
 
 
   .slick-prev::before{
-    color: $primary;
+    color: $primaryColor;
   }
 
   .slick-next::before{
-    color: $primary;
+    color: $primaryColor;
   }
 
 
@@ -1164,7 +1160,7 @@ html{
         }
         .item-icon{
           font-size: 42px;
-          color: $primary;
+          color: $primaryColor;
         }
 
       }
@@ -1219,7 +1215,7 @@ html{
     box-shadow: 0 2px 20px -7px lighten($black, 50%);
 
     .card-header{
-      background: $primary;
+      background: $primaryColor;
       border-radius: 0;
       border: none;
       color: $white;
@@ -1276,7 +1272,7 @@ html{
       }
 
       .btn{
-        background: $primary;
+        background: $primaryColor;
         font-weight: 500;
         color: $white;
         font-size: 20px;
@@ -1336,7 +1332,7 @@ html{
 
     .icon-link{
       text-decoration: none;
-      color: $primary;
+      color: $primaryColor;
       font-size: 28px;
       margin: 0 20px;
       height: 50px;
@@ -1351,7 +1347,7 @@ html{
 
       &:hover{
         color: $black;
-        background: lighten($primary, 30%);
+        background: lighten($primaryColor, 30%);
         border-radius: 100%;
       }
 
@@ -1369,7 +1365,7 @@ html{
   display: none;
   position: fixed;
   bottom: 50px;
-  background: $primary;
+  background: $primaryColor;
   padding: 10px;
   right: 50px;
   z-index: 100;
