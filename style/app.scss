@@ -108,8 +108,12 @@ html{
 .home-inner{
   position: relative;
   height: 500px;
-  background-image: url("/image/cycle.jpg");
+  display: block;
+  background: url('../image/cycle.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
+  background-color: #cccccc;
 
   .dark-overlay{
     position: absolute;
