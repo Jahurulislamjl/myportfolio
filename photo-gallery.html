@@ -1,0 +1,115 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/app.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <title>Jahurul's Portfolio</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="/#home">
+                <img src="image/jahurul.jpg" width="30" alt="">
+            </a>
+            <button class="navbar-toggler user-defined" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse nav-user-define micro-nav" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#home">
+                            about
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#skill">
+                            skills
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#portfolio">
+                            portfolio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#experience">
+                            experience
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#pricing">
+                            price
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-5" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            blog
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-user-define"
+                            aria-labelledby="navbarDropdownMenuLink-4">
+                            <a class="dropdown-item" href="photo-gallery.html">photo gallery</a>
+                            <router-link class="dropdown-item" :to="{name:'photoGallery'}">photo gallery</router-link>
+                            <router-link class="dropdown-item" :to="{name:''}">video gallery</router-link>
+
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#contact">
+                            contact
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            other </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-user-define"
+                            aria-labelledby="navbarDropdownMenuLink-4">
+                            <router-link class="dropdown-item" :to="{name:''}">Thank You</router-link>
+                            <router-link class="dropdown-item" :to="{name:''}">Review</router-link>
+                            <router-link class="dropdown-item" :to="{name:''}">Download</router-link>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div>
+        <div class="photo-gallery-inner">
+            <div class="dark-overlay">
+
+            </div>
+        </div>
+        <section id="photo-gallery" class="py-5" >
+            <div class="container">
+                <div uk-lightbox>
+                    <a class="uk-button uk-button-default" href="./popcorn.jpg" data-caption="Image" height="200px">
+                        <img src="./popcorn.jpg" width="120px" height="auto">
+                    </a>
+                    <a class="uk-button uk-button-default" href="https://yootheme.com/site/images/media/yootheme-pro.mp4" data-caption="Video">Video</a>
+                    <a class="uk-button uk-button-default" href="https://www.youtube.com/watch?v=c2pz2mlSfXA" data-caption="YouTube">YouTube</a>
+                    <a class="uk-button uk-button-default" href="https://vimeo.com/1084537" data-caption="Vimeo">Vimeo</a>
+                    <a class="uk-button uk-button-default" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4740.819266853735!2d9.99008871708242!3d53.550454675412404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3f9d24afe84a0263!2sRathaus!5e0!3m2!1sde!2sde!4v1499675200938" data-caption="Google Maps" data-type="iframe">Google Maps</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/jquery-slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/wow.min.js"></script>
+</body>
+
+</html>
+
