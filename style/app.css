@@ -294,6 +294,12 @@ html {
 
 #testimonial .slick-prev::before, #testimonial .slick-next::before {
   color: #E8676B;
+  display: none !important;
+}
+
+#testimonial .slick-dots li button:before {
+  color: #E8676B !important;
+  font-size: 12px !important;
 }
 
 .skills .accordion {

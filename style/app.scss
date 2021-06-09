@@ -250,6 +250,11 @@ html{
 #testimonial{
   .slick-prev::before, .slick-next::before{
     color: $primaryColor;
+    display: none !important;
+  }
+  .slick-dots li button:before{
+    color: $primaryColor !important;
+    font-size: 12px !important;
   }
 }
 //=======Skills==============
